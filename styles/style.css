@@ -8,7 +8,10 @@ body {
   width: 92vw;
   margin: 0 auto;
   padding: 10vh;  
+}
 
+header {
+  background-color: #64653670;
 }
 
 h1 {
