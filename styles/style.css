@@ -33,25 +33,10 @@ li {
 img {
   display: block;
   margin: 0 auto;
-  width: 100%;
   max-width: 200px;
   height: auto;
-     --s: 200px; /* image size */
-  --b: 16px; /* control the border thickness */
-  --n: 3; /* number of borders */
-  --c: #774F38;
-  aspect-ratio: 1.2; /* It works with any ratio */
-  object-fit: cover;
-  --_p:calc(var(--b)*var(--n));
-  --_d:calc(var(--s)/(2*var(--n)) + var(--b));
-  padding: var(--_p);
-  border-radius: calc(var(--_p) + var(--b)/4);
-  border-image:
-    repeating-radial-gradient(
-       var(--c) 0,#0000 2px calc(var(--_d)/2 - 2px),
-       var(--c) calc(var(--_d)/2) var(--_d))
-    49.8%/var(--_p);
-  clip-path: inset(0 round var(--_p))
+  border: double 14 px #774F38;
+
 }
 
 .main {
