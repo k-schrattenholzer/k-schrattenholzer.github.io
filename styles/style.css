@@ -18,9 +18,10 @@ p, li {
 body {
   width: 100vw;
   margin: 0 auto;
-  padding: 0 10px 10px 10px;
+  padding: 10vh;
   border: 5px solid black;
   border-radius: 35%;
+  background-color: #D7FFAB;
 }
 
 h1 {
@@ -36,6 +37,6 @@ img {
 }
 
 .main {
-  background-color: #D7FFAB;
+
   padding: 20px;
 }
