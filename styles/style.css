@@ -1,31 +1,50 @@
 html {
   font-size: 10px;
-  font-family: "Exile", system-ui;
-  background-color: #96ADC8;
+  font-family: "Lexend Deca", sans-serif;
+  background-color: #96adc8;
 }
 
 body {
-  width: 100vw;
+  width: 80vw;
   margin: 0 auto;
   padding: 10vh;
   border: 5px solid black;
   border-radius: 35%;
-  background-color: #D7FFAB;
+  
+   --s: 200px; /* image size */
+  --b: 14px; /* control the border thickness */
+  --n: 5; /* number of borders */
+  --c: #774F38;
+  
+  width: var(--s);
+  aspect-ratio: 1.2; /* It works with any ratio */
+  object-fit: cover;
+  --_p:calc(var(--b)*var(--n));
+  --_d:calc(var(--s)/(2*var(--n)) + var(--b));
+  padding: var(--_p);
+  border-radius: calc(var(--_p) + var(--b)/4);
+  border-image:
+    repeating-radial-gradient(
+       var(--c) 0,#0000 2px calc(var(--_d)/2 - 2px),
+       var(--c) calc(var(--_d)/2) var(--_d))
+    49.8%/var(--_p);
+  clip-path: inset(0 round var(--_p))
 }
 
 h1 {
   font-size: 60px;
   text-align: center;
   color: #444;
-	margin: 0;
-	padding: 0px 0px 6px 0px;
-	font-size: 51px;
-	line-height: 44px;
-	letter-spacing: -2px;
-	font-weight: bold;
+  margin: 0;
+  padding: 0px 0px 6px 0px;
+  font-size: 51px;
+  line-height: 44px;
+  letter-spacing: -2px;
+  font-weight: bold;
 }
 
-p, li {
+p,
+li {
   font-size: 16px;
   line-height: 2;
   letter-spacing: 1px;
@@ -34,9 +53,18 @@ p, li {
 img {
   display: block;
   margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
 }
 
 .main {
-
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d7ffab70;
+  border-radius: 10px;
 }
+
+
