@@ -12,11 +12,9 @@ body {
   border-radius: 35%;
   
    --s: 200px; /* image size */
-  --b: 14px; /* control the border thickness */
-  --n: 5; /* number of borders */
+  --b: 16px; /* control the border thickness */
+  --n: 3; /* number of borders */
   --c: #774F38;
-  
-  width: var(--s);
   aspect-ratio: 1.2; /* It works with any ratio */
   object-fit: cover;
   --_p:calc(var(--b)*var(--n));
