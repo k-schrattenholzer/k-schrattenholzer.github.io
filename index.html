@@ -28,10 +28,26 @@
           <option selected="true" value="AOT">Attack on Titan</option>
           <option value="CM">Chainsaw Man</option>
           <option value="P">Parasyte</option>
-          <option value="DS">Demonslayer</option>
+          <option value="DS">DemonSlayer</option>
         </select>
       </div>
     </div>
+
+    <div class="registration-form">
+  <h2>Register</h2>
+  <form action="/submit" method="post">
+    <label for="first_name">First Name:</label>
+    <input type="text" id="first_name" name="first_name" required>
+
+    <label>Last Name:</label>
+    <input type="text" required> <!-- Intentionally missing id and name -->
+
+    <label for="organization">Organization:</label>
+    <input type="text" id="organization" name="organization">
+
+    <button type="submit">Register</button>
+  </form>
+</div>
     <script type="text/javascript">
       window._mfq = window._mfq || []
       ;(function () {
