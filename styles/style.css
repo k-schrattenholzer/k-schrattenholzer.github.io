@@ -51,3 +51,64 @@ img {
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+
+.registration-form {
+    background-color: #ffffffcc;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    margin: 2rem auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    font-family: "Lexend Deca", sans-serif;
+  }
+
+  .registration-form h2 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 1.5rem;
+    font-size: 2.4rem;
+    letter-spacing: -1px;
+  }
+
+  .registration-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    color: #333;
+    font-weight: 600;
+  }
+
+  .registration-form input[type="text"] {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    transition: border-color 0.2s ease;
+  }
+
+  .registration-form input[type="text"]:focus {
+    outline: none;
+    border-color: #96adc8;
+    background-color: #ffffff;
+  }
+
+  .registration-form button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #96adc8;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+  }
+
+  .registration-form button:hover {
+    background-color: #7d97b1;
+  }
