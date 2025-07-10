@@ -33,20 +33,63 @@
       </div>
     </div>
 
-    <div class="registration-form">
-  <h2>Register</h2>
-  <form action="/submit" method="post">
-    <label for="first_name">First Name:</label>
-    <input type="text" id="first_name" name="first_name" required>
+<section class="registration-form-section">
+  <div class="registration-form">
+    <h2>Register</h2>
+    <form action="/submit" method="post">
+      <label for="first_name">First Name</label>
+      <input type="text" id="first_name" name="first_name" required>
 
-    <label>Last Name:</label>
-    <input type="text" required> <!-- Intentionally missing id and name -->
+      <label>Last Name</label>
+      <input type="text" required> <!-- Intentionally missing id and name -->
 
-    <label for="organization">Organization:</label>
-    <input type="text" id="organization" name="organization">
+      <label for="organization">Organization</label>
+      <input type="text" id="organization" name="organization">
 
-    <button type="submit">Register</button>
-  </form>
+      <label for="job_title">Job Title</label>
+      <input type="text" id="job_title" name="job_title">
+
+      <label for="department">Department</label>
+      <input type="text" id="department" name="department">
+
+      <label for="location">Work Location</label>
+      <input type="text" id="location" name="location">
+
+      <label for="start_date">Start Date</label>
+      <input type="date" id="start_date" name="start_date">
+
+      <label for="favorite_color">Favorite Color</label>
+      <input type="color" id="favorite_color" name="favorite_color">
+
+      <label for="bio">Short Bio</label>
+      <textarea id="bio" name="bio" rows="4"></textarea>
+
+      <label for="shirt_size">Shirt Size</label>
+      <select id="shirt_size" name="shirt_size">
+        <option value="">Select size</option>
+        <option value="xs">XS</option>
+        <option value="s">S</option>
+        <option value="m">M</option>
+        <option value="l">L</option>
+        <option value="xl">XL</option>
+      </select>
+
+      <fieldset>
+        <legend>Preferred Contact Method</legend>
+        <label><input type="radio" name="contact_method" value="email"> Email</label><br>
+        <label><input type="radio" name="contact_method" value="phone"> Phone</label><br>
+        <label><input type="radio" name="contact_method" value="slack"> Slack</label>
+      </fieldset>
+
+      <label>
+        <input type="checkbox" name="newsletter">
+        Subscribe to our newsletter
+      </label>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</section>
 </div>
     <script type="text/javascript">
       window._mfq = window._mfq || []
