@@ -53,7 +53,7 @@ img {
 }
 
 .registration-form-section {
-    background-color: #e0d7ff; /* light lavender tone for contrast */
+    background-color: #e0d7ff;
     padding: 4rem 2rem;
     margin: 4rem auto;
     border-radius: 12px;
@@ -84,7 +84,11 @@ img {
     font-weight: 600;
   }
 
-  .registration-form input[type="text"] {
+  .registration-form input[type="text"],
+  .registration-form input[type="date"],
+  .registration-form input[type="color"],
+  .registration-form textarea,
+  .registration-form select {
     width: 100%;
     padding: 0.8rem;
     margin-bottom: 1.5rem;
@@ -95,10 +99,34 @@ img {
     transition: border-color 0.2s ease;
   }
 
-  .registration-form input[type="text"]:focus {
+  .registration-form input:focus,
+  .registration-form textarea:focus,
+  .registration-form select:focus {
     outline: none;
     border-color: #96adc8;
     background-color: #ffffff;
+  }
+
+  .registration-form textarea {
+    resize: vertical;
+  }
+
+  .registration-form fieldset {
+    border: none;
+    margin: 1.5rem 0;
+    padding: 0;
+  }
+
+  .registration-form legend {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+
+  .registration-form input[type="radio"],
+  .registration-form input[type="checkbox"] {
+    margin-right: 0.5rem;
   }
 
   .registration-form button {
